@@ -64,16 +64,26 @@
 
 // },1000)
 // 6. self invoking function(IIFE): to obtain data privacy and to call a function immediately after the function  scope .
-function classtest(){
-    console.log("classtest")
-}
-let a =10;
-function midterm(){
-    classtest();
-}
-midterm()
 
- let test5 =(function(){
-   return "sample5";
-})()
-console.log(test5)
+
+
+
+// function classtest(){
+//     console.log("classtest")
+// }
+// let a =10;
+// function midterm(){
+//     classtest();
+// }
+// midterm()
+
+//  let test5 =(function(){
+//    return "sample5";
+// })()
+// console.log(test5)            
+
+var x =1;
+{
+    var x=2;
+}
+console.log(x);
